@@ -16,8 +16,10 @@
         <h3>{{$book->title}}</h3>
     </a>
     <p>{{$book->desc}}</p>
-
+    
+    <a class="btn btn-success" href="{{route('books.edit', $book->id)}}">Edit</a>
     <a class="btn btn-danger" href="{{route('books.delete', $book->id)}}">Delete</a>
+    <hr>
 
     @endforeach
     {{ $books->render() }}
