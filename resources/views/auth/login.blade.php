@@ -1,19 +1,15 @@
 @extends('layout')
 
 @section('title')
-Register
+Login
 @endsection
 
 @section('content')
 
 @include('inc.errors')
 
-<form method="POST" action="{{ route('auth.handleRegister') }}">  
+<form method="POST" action="{{ route('auth.handleLogin') }}">  
     @csrf 
-  <div class="form-group">
-    <label for="exampleFormControlInput1" class="form-label">Name</label>
-    <input type="text" name="name" class="form-control" placeholder="Name" value="{{ old('name') }}">
-  </div>
   
   <div class="form-group">
     <label for="exampleFormControlInput1" class="form-label">E-mail</label>
