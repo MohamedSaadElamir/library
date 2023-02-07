@@ -18,6 +18,7 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="{{route('books.index')}}">Books</a>
               <a class="nav-link" href="{{route('categories.index')}}">Categories</a>
+              <a class="nav-link" href="{{route('auth.register')}}">Register</a>
             </div>
           </div>
         </div>
